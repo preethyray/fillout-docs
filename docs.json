@@ -1,56 +1,39 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "maple",
+  "name": "Fillout Help Center",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#211C20",
+    "light": "#FFC738",
+    "dark": "#071003"
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Guides",
+        "dropdown": "Getting Started",
+        "icon": "book",
+        "description": "Set up your documentation",
         "groups": [
           {
             "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
+            "pages": ["help/introduction", "help/quickstart"]
           },
           {
             "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
+            "pages": ["essentials/markdown"]
           }
         ]
       },
+
       {
-        "tab": "API Reference",
+        "dropdown": "What's new",
+        "icon": "list-timeline",
+        "description": "Updates and changes",
         "groups": [
           {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
+            "group": "What's new",
+            "pages": ["whats-new"]
           }
         ]
       }
@@ -76,27 +59,122 @@
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/images/logo/light.svg",
+    "dark": "/images/logo/dark.svg"
   },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+  "integrations": {
+    "intercom": {
+      "appId": "bbe4x0bh"
     }
   },
+  "navbar": {
+    "primary": {
+      "type": "button",
+      "label": "Make a form",
+      "href": "https://fillout.com"
+    }
+  },
+  "contextual": {
+    "options": ["copy", "chatgpt", "claude"]
+  },
   "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+    "links": [
+      {
+        "header": "General",
+        "items": [
+          { "label": "Home", "href": "https://fillout.com" },
+          { "label": "Pricing", "href": "https://fillout.com/pricing" },
+          {
+            "label": "Integrations",
+            "href": "https://fillout.com/integrations"
+          },
+          { "label": "Careers", "href": "https://fillout.com/careers" },
+          {
+            "label": "Report abuse",
+            "href": "https://fillout.com/report-abuse"
+          },
+
+          { "label": "Blog", "href": "https://fillout.com/blog" },
+          { "label": "Enterprise", "href": "https://fillout.com/enterprise" }
+        ]
+      },
+      {
+        "header": "Product",
+        "items": [
+          { "label": "Forms", "href": "https://build.fillout.com/signup" },
+          { "label": "Scheduling", "href": "https://fillout.com/scheduling" },
+          {
+            "label": "PDF generation",
+            "href": "https://fillout.com/pdf-to-form"
+          },
+          { "label": "Payments", "href": "https://fillout.com/payments" },
+          { "label": "Workflows", "href": "https://fillout.com/workflows" },
+          {
+            "label": "Conversion kit",
+            "href": "https://fillout.com/conversion-kit"
+          },
+          { "label": "Zite", "href": "https://www.zite.com" }
+        ]
+      },
+      {
+        "header": "AI tools",
+        "items": [
+          {
+            "label": "AI Quiz Maker",
+            "href": "https://fillout.com/ai-quiz-maker"
+          },
+          {
+            "label": "AI Form Builder",
+            "href": "https://fillout.com/ai-form-builder"
+          },
+          {
+            "label": "AI Survey Maker",
+            "href": "https://fillout.com/ai-survey-maker"
+          },
+          {
+            "label": "Import Google Form",
+            "href": "https://fillout.com/google-forms-customizer"
+          },
+          {
+            "label": "AI Signature Maker",
+            "href": "https://fillout.com/ai-signature-generator"
+          },
+          { "label": "Survey questions", "href": "https://surveyquestions.co" },
+          { "label": "PDF to Form", "href": "https://fillout.com/pdf-to-form" }
+        ]
+      },
+      {
+        "header": "Resources",
+        "items": [
+          { "label": "Help Center", "href": "https://fillout.com/help" },
+          { "label": "About Fillout", "href": "https://fillout.com/about" },
+          { "label": "Status", "href": "https://fillout.statuspage.io/" },
+          {
+            "label": "Form builder comparison",
+            "href": "https://fillout.com/form-builder-comparison"
+          },
+          {
+            "label": "Fillout vs Jotform",
+            "href": "https://fillout.com/vs/jotform"
+          },
+          { "label": "vs Typeform", "href": "https://fillout.com/vs/typeform" },
+          {
+            "label": "vs Google Forms",
+            "href": "https://fillout.com/vs/google-forms"
+          },
+          {
+            "label": "vs Formstack",
+            "href": "https://fillout.com/vs/formstack"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "metatags": {
+      "og:site_name": "Fillout Help Center",
+      "og:title": "Fillout | Help Center",
+      "og:description": "Browse help articles and customer support for Fillout. Build any form in minutes."
     }
   }
 }
