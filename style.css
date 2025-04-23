@@ -1,10 +1,4 @@
-.update-container {
-    @media (min-width: 1024px) {
-        .lg\:w-\[160px\] {
-            width: 120px !important;
-        }
-    }    
-}
+
 
 li,
 p {
