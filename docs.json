@@ -11,22 +11,6 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help Center",
-        "icon": "book",
-
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": ["getting-started"]
-          },
-          {
-            "group": "Essentials",
-            "pages": ["essentials/markdown"]
-          }
-        ]
-      },
-
-      {
         "tab": "What's new",
         "icon": "list-timeline",
 
@@ -138,7 +122,7 @@
       {
         "header": "Resources",
         "items": [
-          { "label": "Help Center", "href": "https://fillout.com/docs" },
+          { "label": "Help Center", "href": "https://fillout.com/help" },
           { "label": "About Fillout", "href": "https://fillout.com/about" },
           { "label": "Status", "href": "https://fillout.statuspage.io/" },
           {
