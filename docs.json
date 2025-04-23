@@ -60,13 +60,15 @@
   },
   "logo": {
     "light": "/images/logo/light.svg",
-    "dark": "/images/logo/dark.svg"
+    "dark": "/images/logo/dark.svg",
+    "href": "https://fillout.com"
   },
   "integrations": {
     "intercom": {
       "appId": "bbe4x0bh"
     }
   },
+
   "navbar": {
     "primary": {
       "type": "button",
