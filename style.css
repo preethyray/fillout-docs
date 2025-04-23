@@ -1,0 +1,23 @@
+.update-container {
+    @media (min-width: 1024px) {
+        .lg\:w-\[160px\] {
+            width: 120px !important;
+        }
+    }    
+}
+
+li,
+p {
+    font-size: 16px !important;
+}
+h4.flex.whitespace-pre-wrap.group.font-semibold {
+    font-size: 17px !important;
+}
+
+
+a svg {
+    color: #FFC738 !important;
+}
+a span {
+    color: #FFC738 !important;
+}

@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "mint",
   "name": "Fillout Help Center",
   "colors": {
     "primary": "#211C20",
@@ -9,11 +9,11 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "dropdowns": [
+    "tabs": [
       {
-        "dropdown": "Getting Started",
+        "tab": "Help Center",
         "icon": "book",
-        "description": "Set up your documentation",
+
         "groups": [
           {
             "group": "Get Started",
@@ -27,9 +27,9 @@
       },
 
       {
-        "dropdown": "What's new",
+        "tab": "What's new",
         "icon": "list-timeline",
-        "description": "Updates and changes",
+
         "groups": [
           {
             "group": "What's new",
@@ -175,6 +175,21 @@
       "og:site_name": "Fillout Help Center",
       "og:title": "Fillout | Help Center",
       "og:description": "Browse help articles and customer support for Fillout. Build any form in minutes."
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Your Heading Font",
+      "weight": 700,
+      "source": "https://static.fillout.com/fillout-fonts/BLMelody-Bold.woff2",
+      "format": "woff2"
+    },
+    "body": {
+      "family": "Your Body Font",
+      "weight": 400,
+
+      "source": "https://static.fillout.com/fillout-fonts/BLMelody-Regular.woff2",
+      "format": "woff2"
     }
   }
 }
