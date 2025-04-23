@@ -17,7 +17,7 @@
         "groups": [
           {
             "group": "Get Started",
-            "pages": ["help/introduction", "help/quickstart"]
+            "pages": ["getting-started"]
           },
           {
             "group": "Essentials",
@@ -41,18 +41,8 @@
     "global": {
       "anchors": [
         {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
           "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
+          "href": "https://fillout.com/blog",
           "icon": "newspaper"
         }
       ]
@@ -148,7 +138,7 @@
       {
         "header": "Resources",
         "items": [
-          { "label": "Help Center", "href": "https://fillout.com/help" },
+          { "label": "Help Center", "href": "https://fillout.com/docs" },
           { "label": "About Fillout", "href": "https://fillout.com/about" },
           { "label": "Status", "href": "https://fillout.statuspage.io/" },
           {

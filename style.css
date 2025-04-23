@@ -15,9 +15,15 @@ h4.flex.whitespace-pre-wrap.group.font-semibold {
 }
 
 
-a svg {
+#navbar a svg {
     color: #FFC738 !important;
 }
-a span {
+#navbar a span {
     color: #FFC738 !important;
+}
+
+.update-container .cursor-pointer.px-2.py-1.rounded-lg.text-sm.flex.items-center.flex-grow-0.justify-center.font-medium.bg-primary\/10.text-primary.dark\:text-primary-light {
+
+    color: #C89000 !important;
+    background: #FFF9EA !important;
 }
