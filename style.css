@@ -13,6 +13,9 @@ p {
 h4.flex.whitespace-pre-wrap.group.font-semibold {
     font-size: 17px !important;
 }
+h2.flex.whitespace-pre-wrap.group.font-semibold {
+    font-size: 22px !important;
+}
 
 
 #navbar a svg {
