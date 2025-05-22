@@ -1,0 +1,52 @@
+---
+title: "Condition groups"
+description: "Use condition groups to show, hide and validate fields based on multiple conditions at once. Use nested logic to encode any condition you need in your form."
+icon: table-tree
+sidebarTitle: Condition Groups
+---
+
+## Show or hide a question based on a condition group
+
+Click on the question or field you want to hide followed by its `settings icon` to open the right-hand panel. Under **Logic**, `Set conditional logic` to `+ Add condition group`.
+
+<Frame>
+  <img src="/images/logic/image-27.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+### And function
+
+Here's an example using the **and function**. Here all 3 conditions must be true in order for a field to be shown. Namely, the user must answer Yes when asked if they have an existing appointment, the Date must be on or before Tomorrow and only for Consultation reason.
+
+<Frame>
+  <img src="/images/logic/image-28.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+### Or function
+
+Now, let's use the **or function** in the example below. Here a question will be shown if the user answered with 1, 2, 3 OR 4 stars.
+
+<Frame>
+  <img src="/images/logic/image-29.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+## Nested conditions
+
+In the example below, a field will be shown if the city is Paris OR if the country is neither France nor England.
+
+<Frame>
+  <img src="/images/logic/image-30.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Conditionally hide fields" href="/help/conditional-hiding" icon="eye-slash" iconType="regular" color="#FFC738">
+    Hide or show fields based on prior inputs, URL parameters or external data.
+  </Card>
+  <Card title="Calculations and variables" href="/help/calculations" icon="calculator-simple" iconType="regular" color="#FFC738">
+    Calculate prices for order forms, compute the score of a quiz, and more.
+  </Card>
+  <Card title="Conditional integration logic" href="/help/conditional-integration" icon="gear-complex" iconType="regular" color="#FFC738">
+    Perform an integration only when a certain condition is met.
+  </Card>
+</CardGroup>

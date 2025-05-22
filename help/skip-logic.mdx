@@ -1,0 +1,47 @@
+---
+title: "Use skip logic for questions with multiple answers"
+description: "Create dynamic forms that branch to different sections depending on previous answers using logic."
+icon: "arrow-right-arrow-left"
+sidebarTitle: "Use Skip Logic for Questions with Multiple Answers"
+---
+
+## How to set up skip logic
+
+On your form builder, go to `Logic`. For example, let’s ask respondents which specific services they would like to avail.
+
+<Frame>
+  <img src="/images/guides/image-25.png" alt="PDF Viewer" />
+</Frame>
+
+By default, each page connects to a single page, until the **Ending page**. We want to create a dynamic form that will only show pages relevant to previous answers.
+
+First, drag and drop the `+` connector of the page containing the question to the connector of the relevant page. Then, `Set condition`.
+
+<Frame>
+  <img src="/images/guides/image-26.png" alt="PDF Viewer" />
+</Frame>
+
+Say, the respondent selects Solutions and Training only. In this case, we’ll have them skip the page(/s) that come before it, Consultation.
+
+<Frame>
+  <img src="/images/guides/image-27.png" alt="PDF Viewer" />
+</Frame>
+
+Now, let’s make a path for when they select only one option like Solutions. We’ll add `+ Add branch` to skip the page(/s) after it, Training.
+
+<Frame>
+  <img src="/images/guides/image-28.png" alt="PDF Viewer" />
+</Frame>
+
+For the remaining options, `+ Add branch` and repeat the same process. Configure the branches as you see fit.
+
+## Relevant articles
+
+<CardGroup cols={3}>
+  <Card title="Page logic" href="/help/page-logic" icon="diagram-project" iconType="regular" color="#FFC738">
+    Hide or show certain pages or custom endings based on respondents' previous input.
+  </Card>
+  <Card title="Condition groups" href="/help/condition-logic-groups" icon="table-tree" iconType="regular" color="#FFC738">
+    Use nested logic to show, hide and validate fields based on multiple conditions at once.
+  </Card>
+</CardGroup>

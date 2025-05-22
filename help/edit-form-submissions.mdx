@@ -1,0 +1,78 @@
+---
+title: "Let users edit their form submissions"
+description: "Fillout lets you make updatable forms. Let your users edit their answers anytime, ensuring you always have the most current information."
+icon: "file-signature"
+sidebarTitle: "Let Users Edit Their Form Submissions"
+---
+
+Fillout lets you make updatable forms. Let your users edit their answers anytime, ensuring you always have the most current information.
+
+## When do I need an editable form?
+
+Making your forms editable improves the accuracy of the data you collect and reduces back-and-forth with your users. Common use cases includes:
+
+- When collecting RSVPs for an event, let users change their response if their plans change.
+- If conducting a survey, let respondents update their answers if they have new information.
+- Let users change their notification preferences down the line on a newsletter signup form.
+
+There are a few ways to enable form edits in Fillout, depending on your needs.
+
+## Option 1: Edit link sent by email
+
+If you want every respondent to receive an edit link, this is the best approach. First, head to **Settings** from the top menu and enable `Respondent notifications`. Make sure to toggle `Include a link to edit submission`.
+
+<Frame>
+<img src="/images/guides/image-8.png" alt="PDF Viewer" />
+</Frame>
+
+When the respondent submits the form, they’ll receive an email with a clear button to `Edit submission`.
+
+<Frame>
+<img src="/images/guides/image-9.png" alt="PDF Viewer" />
+</Frame>
+
+Learn more about respondent notifications [here](/help/respondent-emails).
+
+## Option 2: Send response field type
+
+If you want to make the respondent notification opt-in, use this approach instead. On your form’s [ending page](/help/ending-page), drag-and-drop or click on the `Send response` field type in the left-hand panel.
+
+When users submit your form, they’ll now see an option to enter their email address to receive a summary of their responses.
+
+<Frame>
+<img src="/images/guides/image-10.png" alt="PDF Viewer" />
+</Frame>
+
+To include a form edit link, toggle the `Include edit link` switch in the right-hand panel. That’s it!
+
+<Frame>
+<img src="/images/guides/image-11.png" alt="PDF Viewer" />
+</Frame>
+
+## Option 3: Send an edit link manually
+
+First, head to the **Results** tab on your form and open the submission in question. Click `⋮` or the vertical ellipsis symbol followed by `Edit`. A new tab will open with the filled submission. Copy the link and share it.
+
+<Frame>
+<img src="/images/guides/image-12.png" alt="PDF Viewer" />
+</Frame>
+
+## Updating integrations
+
+With both the approaches described above, your connected 3rd-party integrations will automatically be updated whenever someone submits the edit link. For example, if your form is connected to Airtable, re-submitting the form from a respondent notification link will update the record in Airtable.
+
+You can also set up edit links for specific integrations. See these guides or follow the same instructions for other integrations, like SmartSuite or Monday.com.
+
+<CardGroup cols={3}>
+  <Card title="Update existing Airtable records with a form" href="/help/airtable-update-form" icon="table-layout" iconType="regular" color="#FFC738">
+  Make a form that edits existing records from Airtable and pre-fills fields with data from the record.
+  </Card>
+  <Card title="Update existing Notion pages with a form" href="/help/notion-update-form" icon="book" iconType="regular" color="#FFC738">
+  Make a form that edits existing pages from Notion, and pre-fills fields with data from the page.
+  </Card>
+</CardGroup>
+
+
+## Closing the form
+
+If you’ve sent out an edit link but no longer want to accept submissions, you can always [close your form](/help/manage-form-access) to new submissions and edits.
