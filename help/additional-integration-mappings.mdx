@@ -1,0 +1,54 @@
+---
+title: "Map Fillout fields to integrations"
+description: "Configure form fields and values to send to Notion, Airtable, and other database integrations."
+sidebarTitle: "Map Fillout Fields to Integrations"
+icon: right-left
+---
+
+One of the most important parts of connecting to a database is connecting your form fields to actually be sent to your database when the form is submitted.
+
+## How to map fields
+
+### 1. Connect a database
+
+Head to **Integrate** and connect your form to [Airtable](/help/airtable), [Notion](/help/notion), [HubSpot](/help/hubspot), or [other databases](/help).
+
+### 2. Drag and drop synced columns
+
+Go back to **Edit** in the top menu. In the left-hand panel, you'll see columns from your database automatically synced. Drag and drop these to your form.
+
+<Frame>
+  <img src="/images/Screenshot2025-02-14at12.04.48PM.png" alt="Screenshot of the Fillout form creation page" />
+</Frame>
+
+## Mappings
+
+You might want to send additional information to Airtable, Notion or other databases when a respondent submits your form, other than your form fields. For example, you might want to save:
+
+- [URL parameters](/help/url-parameters)
+- [Static values](/help/integration-static-values)
+- Submission date
+- [Fields from the record returned after logging in](/help/login-page)
+- [Fields from a pre-fetched record](/help/pre-fetch-data)
+
+You can create a field, [pre-fill](/help/prefill-fields) it with a value, and connect it to Airtable or Notion through the **Connected** menu in the right-hand panel.
+
+**Mappings** in the **Integrate** page also lets you do this directly. For example, let's connect a URL parameter. `+ Add new`and pick a field in Airtable, and then any referenceable value in **Fillout**\!
+
+<Frame>
+  <img src="/images/Screenshot2025-02-14at12.08.30PM.png" alt="Screenshot of the Fillout form creation page" />
+</Frame>
+
+## **Related articles**
+
+<CardGroup cols={3}>
+  <Card title="Pre-fill fields" href="/help/prefill-fields" icon="fill" iconType="regular" color="#FFC738">
+    Set a default value to pre-populate form fields based on previous inputs, URL parameters, and more.
+  </Card>
+  <Card title="Login page" href="/help/login-page" icon="key" iconType="regular" color="#FFC738">
+    Require respondents to verify their email, enter a password, or use Single Sign-On login (SSO).
+  </Card>
+  <Card title="Pre-fetch dynamic data for your form" href="/help/pre-fetch-data" icon="arrow-down-right" iconType="regular" color="#FFC738">
+    Fetch information from Airtable, Notion or any service before your form loads.
+  </Card>
+</CardGroup>

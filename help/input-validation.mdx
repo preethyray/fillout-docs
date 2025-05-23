@@ -1,0 +1,65 @@
+---
+title: Form validation
+description: "Collect accurate information from your respondents by validating form inputs. Define validation rules using logic conditions, regular expressions or out-of-the-box validation rules."
+icon: square-check
+sidebarTitle: Form Validation
+---
+
+## What is form validation
+
+**Data validation** in form building or simply **form validation** ensures that the responses matches certain predefined criteria before the form is submitted. This maintains the accuracy of the data and enhances security by avoiding the submission of incorrect, incomplete or harmful data.
+
+## Set a validation rule
+
+Click on the question or field followed by its `settings icon` to open the right-hand panel. Open the **Validation** dropdown and choose a `Validation pattern`.
+
+<Frame>
+  <img src="/images/logic/image-14.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+### Validate with Regular Expressions
+
+Choose **Regex** validate a form input with a regular expression, which definse a rule for the type of input you want to accept. See [here](https://digitalfortress.tech/tips/top-15-commonly-used-regex/) for a list of popular regular expressions. Here are some examples:
+
+| Purpose | Regular expression |
+| --- | --- |
+| Whole numbers | ^\\d+$ |
+| Alphanumeric without space | ^\[a-zA-Z0-9\]\*$ |
+| Alphanumeric with space | ^\[a-zA-Z0-9 \]\*$ |
+| URL | https?:\\/\\/(www\\.)?\[-a-zA-Z0-9@:%.*\\+~#=\]{2,256}\\.\[a-z\]{2,6}\\b(\[-a-zA-Z0-9@:%*\\+.~#()?&//=\]\*) |
+| Decimal numbers | ^\\d\*\\.\\d+$ |
+| Whole and decimal numbers | ^\\d\*(\\.\\d+)?$ |
+
+Copy and paste one of the regular expressions above into the **Regex** field. Test your form using the `Preview` mode!
+
+<Frame>
+  <img src="/images/logic/image-15.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+### Validate with logic
+
+Choose the **Condition** validation pattern to validate a form input based on an arbitrary condition. Click `Set conditional logic`. For example, we only want to accept gmail or yahoo emails.
+
+<Frame>
+  <img src="/images/logic/image-16.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+## Validate text length
+
+Use the **min** and **max length** validation rules to specify the accepted length of text inputs.
+
+<Frame>
+  <img src="/images/logic/image-17.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+## Custom error messages
+
+Provide an **Error message** through the right-hand side settings to override the default warning message.
+
+<Frame>
+  <img src="/images/logic/image-18.png" alt="Screenshot of the Form designer tab of a form" />
+</Frame>
+
+### Testing validation logic
+
+Go to `Preview` mode and click on the `Next` or `Submit` button. You’ll see a warning message appear if your inputs don’t match your validation rules.

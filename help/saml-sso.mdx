@@ -1,0 +1,60 @@
+---
+title: "SAML Single Sign On"
+description: "Enable Single Sign-On (SSO) in Fillout to streamline user authentication and access management. This article will guide you through the setup process to enable SSO through various providers like Okta, Azure AD, and all SAML providers."
+sidebarTitle: SAML Single Sign On
+icon: shield-keyhole
+---
+
+## Pre-requisites
+
+- Organization should be on **Fillout**'s [Enterprise Plan](https://www.fillout.com/enterprise), Tier 2
+- Your account must have an **Admin** role in your team
+
+<Note>
+ SAML is available on Fillout’s [Enterprise Plan](https://www.fillout.com/enterprise), Tier 2.
+</Note>
+
+## Set up SSO
+
+<Steps>
+  <Step>
+  Navigate to your **Fillout** Dashboard and click on `Settings`. Find the **SSO** section.
+  </Step>
+  <Step>
+  Click on `Configure SSO`. You will be guided through the setup process.
+  </Step>
+  <Step>
+  Provide the required information depending on your identity provider (IdP) such as Okta, Azure AD, etc.
+  </Step>
+  <Step>
+  Save the changes.
+  </Step>
+</Steps>
+
+At this point, you can set the default roles for newly provisioned users.
+
+## How to Log in Using SSO
+
+Once SSO is configured, your team members can log in by clicking on `Login with SSO` on the Fillout login page and entering their company email.
+
+<Frame>
+  <img src="/images/security-&-legal/image-2.png" alt="Fillout SAML SSO" />
+</Frame>
+
+## How provisioning users works
+
+Fillout does not currently auto-provision users when they are added to your SSO provider. Instead, an account in Fillout will be created when the user logs into Fillout for the first time, using the SSO login.
+
+## Enforcing SSO
+
+Contact [support@fillout.com](mailto:support@fillout.com) if you would like to enforce SSO for all users on your account.
+
+By default, users added to your account before enabling SSO will still be able to authenticate with their prior authentication method (e.g. password or Google login). At your request, we can enforce SSO for all users going forward, including existing users. Existing users will still retain all their prior details once they login with SSO.
+
+<Check>
+**Important:** You can only enforce SAML SSO for a team if your current session was authenticated with SAML SSO. This ensures that your configuration is working properly before tightening access to your team information, this prevents loss of access to the team.
+</Check>
+
+## SSO on forms
+
+Fillout also supports adding SSO to your forms and pre-filling fields with employee information. [Learn more here.](/help/sso-form-login)

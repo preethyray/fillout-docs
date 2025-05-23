@@ -1,0 +1,86 @@
+---
+title: "Scheduling page"
+description: "Allow respondents to book a time slot on your calendar using Fillout Scheduling, Calendly, or Cal.com, directly from your Fillout form. Optionally pre-fill fields and save booking data to your integrations."
+icon: "calendar-day"
+sidebarTitle: Scheduling Page
+---
+
+## Add a scheduling page to your form
+
+Click `+ Add page` and choose `Scheduling`.
+
+<Frame>
+<img src="/images/image-11.png" alt="Add a scheduling page to your form" />
+</Frame>
+
+Choose your scheduler. Fillout has its own [native scheduler](/help) supported by Google Calendar, and currently supports [Calendly](https://calendly.com/) and [Cal.com](https://cal.com/). If you prefer to use another scheduler, you can [request it here](https://forms.fillout.com/t/c85QiJrD7Vus).
+
+<Frame>
+<img src="/images/image-2.webp" alt="Fillout Scheduling" />
+</Frame>
+
+### Fillout Scheduling
+
+Select `Scheduling` to grant Fillout access to your Google, Zoom, or Teams calendar. Check out this [guide](/help/fillout-scheduling-intro) to learn more. Then, select a meeting type.
+
+<Frame>
+<img src="/images/image-3.webp" alt="Fillout Scheduling" />
+</Frame>
+
+### **Calendly setup**
+
+`Connect to Calendly` and grant Fillout access. In the **event dropdown**, choose the Calendly event that you’d like your users to book.
+
+<Frame>
+<img src="/images/image-4.webp" alt="Fillout Scheduling" />
+</Frame>
+
+### [Cal.com](http://cal.com/) setup
+
+For `Cal.com`, copy and paste the link of your scheduling event. You can provide either the unique event or the full scheduling link.
+
+<Frame>
+<img src="/images/image-5.webp" alt="Fillout Scheduling" />
+</Frame>
+
+That’s it\! Go to `Preview` mode to try it out. You can always change which event your **scheduling page** is linked to in the right-hand panel by clicking the `settings icon`.
+
+On the **Fillout** **results** page, you’ll see a **direct link** to the new scheduling event, tied to every submission.
+
+## Pre-fill information
+
+You can pass in information to the Scheduling question type using **Calendly/Cal.com prefills** in the right-hand panel. Click the `settings icon` to make the panel appear.
+
+This is useful if you’ve already asked your respondent for their email or name, or if you’d like to pre-fill the calendar to a particular date.
+
+<Frame>
+<img src="/images/image-6.webp" alt="Fillout Scheduling" />
+</Frame>
+
+Click the `+` symbol to **add reference**. This lets you select the value you would like to reference. In this example, we'll pre-fill their email.
+
+## Save the booked time to an integration
+
+With **Fillout**, you can save the exact time your respondent booked and the scheduling event UUID to any integration, like [Airtable](/help/airtable) or [Notion](/help/notion-update-form).
+
+Go to the **Integrate** tab. Under **Mappings**, click `+ Add new`. Choose which **Airtable field** you’d like to save the booked event time to. Then, choose the **scheduling** input as the mapped field.
+
+You can click `Continue` on the Scheduling question if you’d like to reference the booked event’s **end time** (as opposed to just the **start time**) or the **Calendly/Cal.com event UUID**.
+
+<Frame>
+<img src="/images/6Untitled.webp" alt="Fillout Scheduling" />
+</Frame>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Getting started with Fillout Scheduling" href="/help/fillout-scheduling-intro" icon="calendar-pen" iconType="regular" color="#FFC738">
+    Make a scheduling form with Fillout Scheduling for free.
+  </Card>
+  <Card title="Integrations" href="/help/integrations" icon="link" iconType="regular" color="#FFC738">
+    Connect with dozens of native and 3rd party integrations and any service with a REST API.
+  </Card>
+  <Card title="Conversion Kit" href="/help/conversion-kit-workflows" icon="arrow-trend-up" iconType="regular" color="#FFC738">
+    Enrich emails with Clearbit, require, route leads based on company size, and more.
+  </Card>
+</CardGroup>
