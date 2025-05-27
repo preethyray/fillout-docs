@@ -2,7 +2,7 @@
 title: "Choose a record to update"
 description: "Let users choose the record they want to update in Fillout and update it with a custom form."
 sidebarTitle: "Choose a Record to Update"
-icon: files
+icon: "files"
 ---
 
 ## Overview
@@ -16,7 +16,7 @@ Fillout lets you [create update forms](/help/airtable-update-form) to update exi
 Follow the steps [here](/help/airtable-update-form) to create an “update” form. Make sure to select `Update record` on the integration and to publish the form.
 
 <Frame>
-  <img src="/images/Screenshot2025-05-16at3.14.57PM.png" alt="Screenshot of the Form designer tab of a form" />
+  ![Screenshot of the Form designer tab of a form](/images/Screenshot2025-05-16at3.14.57PM.png)
 </Frame>
 
 ### 2. Create another form to choose the record
@@ -26,7 +26,7 @@ Create another form. This is the main form you will send your respondents to so 
 In the form, add a linked record picker that links to the Airtable you would like to update. For example, if your first form updates a Product Inventory table, create this form tied to a different table that has a linked relation with Product Inventory. In this form, add a record picker to choose from those products:
 
 <Frame>
-  <img src="/images/Screenshot2025-05-16at3.15.06PM.png" alt="Screenshot of the Form designer tab of a form" />
+  ![Screenshot of the Form designer tab of a form](/images/Screenshot2025-05-16at3.15.06PM.png)
 </Frame>
 
 ### 3. Connect the forms together
@@ -34,42 +34,31 @@ In the form, add a linked record picker that links to the Airtable you would lik
 Navigate to the [ending page](/help/ending-page) of your record chooser form and set your update form as the **New form to redirect to**.
 
 <Frame>
-  <img src="/images/Screenshot2025-05-16at3.15.30PM.png" alt="Screenshot of the Form designer tab of a form" />
+  ![Screenshot of the Form designer tab of a form](/images/Screenshot2025-05-16at3.15.30PM.png)
 </Frame>
 
 Finally, pass the record ID to update the update form. Click `Set URL parameters` to choose the `ID` parameter of your update form and map it to your record picker field’s `Record ID`.
+
 <Frame>
-  <img src="/images/Screenshot2025-05-16at3.15.39PM.png" alt="Screenshot of the Form designer tab of a form" />
+  ![Screenshot of the Form designer tab of a form](/images/Screenshot2025-05-16at3.15.39PM.png)
 </Frame>
 
 <Tip>
-If you don’t want to create records in your first form, you can always [set a condition](/help/conditional-integration) for when the integration is run (set a condition that is never true).
+  If you don’t want to create records in your first form, you can always [set a condition](/help/conditional-integration) for when the integration is run (set a condition that is never true).
 </Tip>
 
 That’s it\! You can now send respondents to your picker form to choose a record. Once they submit that form, they’ll be automatically redirected to the update form, which will be pre-filled with the record they chose.
 
 ## Airtable specific guides
 
-<CardGroup cols={2}>
-    <Card title="Create new linked records in an Airtable form" href="/help/create-new-linked-records" icon="files-medical" iconType="regular" color="#FFC738">
+<CardGroup cols={3}>
+  <Card title="Create new linked records" icon="files-medical" iconType="regular" color="#FFC738" href="/help/create-new-linked-records">
     Let users create new Airtable records from a record picker in your form.
   </Card>
-  <Card title="How to select and filter Airtable linked records in a dropdown" href="/help/select-linked-airtable-records" icon="folder" iconType="regular" color="#FFC738">
-  Make a linked record picker in Fillout. Optionally filter records based on prior inputs.
+  <Card title="Select Airtable records in a dropdown" icon="square-caret-down" iconType="regular" color="#FFC738" href="/help/select-linked-airtable-records">
+    Make a linked record picker in Fillout and filter records.
   </Card>
-    <Card title="How to Create an Airtable Form" href="/help/airtable" icon="file-spreadsheet"  iconType="regular" color="#FFC738">
-    Use a Fillout form to create or update your Airtable tables. Embed your forms or share them anywhere.
-  </Card>
-  <Card title="Working with linked record pickers" icon="folder-medical" iconType="regular" color="#FFC738" href="/help/record-pickers">
-    Set pre-fills, reference fields from the chosen record, and more.
-  </Card>
-  <Card title="Prevent duplicate submissions in Airtable" hre="/help/prevent-duplicate-submissions" icon="brake-warning" iconType="regular" color="#FFC738">
-    Stop duplicate form submissions from being saved to Airtable.
-  </Card>
-  <Card title="Create multiple Airtable records with a form" href="/help/create-multiple-records-with-form" icon="files" iconType="regular" color="#FFC738">
-  Make a Fillout form that creates multiple Airtable records at once, in different tables.
-  </Card>
-    <Card title="Update existing Airtable records with a form" href="/help/airtable-update-form" icon="arrow-rotate-right" iconType="regular" color="#FFC738">
-    Edit existing records from Airtable and pre-fill fields with data from the record.
+  <Card title="Create multiple records" icon="cabinet-filing" iconType="regular" color="#FFC738" href="/help/create-multiple-records-with-form">
+    Make a Fillout form that creates multiple Airtable records in different tables.
   </Card>
 </CardGroup>
