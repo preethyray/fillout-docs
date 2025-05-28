@@ -2,7 +2,7 @@
 title: "Send form submissions to a webhook"
 description: "Send responses to automation tools (like Make or Zapier), or any other Webhook endpoint you may have."
 sidebarTitle: "Send Form Submissions to a Webhook"
-icon: webhook
+icon: "webhook"
 ---
 
 ## What is a webhook
@@ -16,13 +16,13 @@ A **webhook** is a way for one system (like **Fillout**) to send real-time data 
 Go to **Integrate**, and click `Webhook`.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-10at12.49.44PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-10at12.49.44PM.png)
 </Frame>
 
 Enter your **Webhook URL**, and `Test` it. When you're good with it, click `Finish setup`.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-10at12.51.28PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-10at12.51.28PM.png)
 </Frame>
 
 ### 2. Publish and share your form
@@ -34,13 +34,12 @@ Thats it\! You have all you need to configure a webhook when the form submits. `
 Toggle the `Advanced view` switch to set up your webhook with any of the parameters or arguments you need.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-10at12.52.00PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-10at12.52.00PM.png)
 </Frame>
 
 For these examples, let's assume your URL is something like:
 
 https://hooks.zapier.com/hooks/catch/12475312/abc/
-
 
 Each of the sections in the **Webhook** integration do the following:
 
@@ -49,9 +48,8 @@ Each of the sections in the **Webhook** integration do the following:
 - These get added to the URL at the end.
 - The left-hand side is the **key**, and the right-hand side is the **value** from your form or from anything else you can reference in **Fillout**.
 - For example, if you add, on the left hand side, **source**, and then on the right hand side, **pick reference** of some short answer in your form, then your webhook will send:
-    - [https://hooks.zapier.com/hooks/catch/12475312/abc/?source=answer](https://hooks.zapier.com/hooks/catch/12475312/abc/?source=%3Canswer) to the short answer
-
-    - So if someone answered Facebook in the form, you will send: [https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook](https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook)
+  - [https://hooks.zapier.com/hooks/catch/12475312/abc/?source=answer](https://hooks.zapier.com/hooks/catch/12475312/abc/?source=%3Canswer) to the short answer
+  - So if someone answered Facebook in the form, you will send: https://hooks.zapier.com/hooks/catch/12475312/abc/?source=facebook
 
 **Body**
 
@@ -62,7 +60,7 @@ Each of the sections in the **Webhook** integration do the following:
 
 - Most users will not need to use this section. This is typically if you have an advanced webhook setup which requires sending extra headers
 - The most typical use case for headers is if you have some verification required for your endpoint, and you have a special key you want to send, which will look something like:
-- Authorization --> Bearer \<secret_token\>
+- Authorization --\> Bearer \<secret_token\>
 
 **Cookies (optional)**
 
@@ -71,10 +69,10 @@ Each of the sections in the **Webhook** integration do the following:
 ## **Related articles**
 
 <CardGroup cols={3}>
-  <Card title="Connect Fillout to hundreds of other apps with Zapier" href="/help/zapier" icon="bolt" iconType="regular" color="#FFC738">
-    Add automations to your form by connecting Fillout to hundreds of other apps with this integration.
+  <Card title="Connect Fillout to hundreds of other apps with Zapier" icon="bolt" iconType="regular" color="#FFC738" href="/help/zapier">
+    Add automations to your form.
   </Card>
-  <Card title="Populate dropdowns options with a webhook" href="/help/dynamic-form-dropdowns" icon="list-dropdown" iconType="regular" color="#FFC738">
+  <Card title="Populate dropdowns options with a webhook" icon="list-dropdown" iconType="regular" color="#FFC738" href="/help/dynamic-form-dropdowns">
     Dynamically populate options from a REST API endpoint of your choice.
   </Card>
 </CardGroup>
