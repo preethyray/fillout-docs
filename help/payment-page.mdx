@@ -2,7 +2,7 @@
 title: "Payment page"
 description: "Collect one-time and subscription payments via credit card, US bank account, Affirm, and Stripe Link. Choose a dynamic product name and purchase amount, and optionally send a receipt."
 icon: "credit-card"
-sidebarTitle: Payment Page
+sidebarTitle: "Payment Page"
 ---
 
 ## How to add a payment page
@@ -10,7 +10,7 @@ sidebarTitle: Payment Page
 Click `+ Add page` and choose `Payment`.
 
 <Frame>
-<img src="/images/p1.webp" alt="Add a payment page" />
+  ![Add a payment page](/images/p1.webp)
 </Frame>
 
 <Check>
@@ -26,7 +26,7 @@ Select between the following types:
 Add the details of your payment page and `Connect to Stripe`. From here you can choose the currency, and make the **price** and **product name** [dynamic](/help/fetch-dynamic-data) by clicking the blue `+` icon or typing `@` to reference a specific field.
 
 <Frame>
-<img src="/images/p2.webp" alt="Add a payment page" />
+  ![Add a payment page](/images/p2.webp)
 </Frame>
 
 In this example, the product name and price will change per customer depending on their order.
@@ -40,7 +40,7 @@ That’s it\! Press `Preview` to try out your form. Payments will only be collec
 `Allow discount codes` in the left-hand panel and click `Manage discount codes in Stripe` to add a code or link an existing one to your form.
 
 <Frame>
-  <img src ="/images/image-7.png"/>
+  ![](/images/image-7.png)
 </Frame>
 
 You can also choose a URL parameter or field as the **Discount code** when you scroll down to `Pre-fill fields`.
@@ -50,7 +50,7 @@ You can also choose a URL parameter or field as the **Discount code** when you s
 `Collect email` under **Payment**. This will automatically add an **email** field to your payment page and create a new customer on Stripe.
 
 <Frame>
-  <img src ="/images/image-8.png"/>
+  ![](/images/image-8.png)
 </Frame>
 
 ## Pre-fill fields
@@ -58,7 +58,7 @@ You can also choose a URL parameter or field as the **Discount code** when you s
 You can automatically fill out the fields of the payment form by toggling the `Pre-fill fields` switch. Then, select the corresponding fields below.
 
 <Frame>
-<img src="/images/p5.webp" alt="Pre-fill fields" />
+  ![Pre-fill fields](/images/p5.webp)
 </Frame>
 
 ## Reference the payment intent ID in integrations
@@ -66,7 +66,7 @@ You can automatically fill out the fields of the payment form by toggling the `P
 You can save the Stripe payment ID to the integration of your choice by referencing it. Go to **Integrate** and choose a platform. Under **Mappings**, look for **Stripe Payment ID.**
 
 <Frame>
-<img src="/images/p6.webp" alt="Reference the payment intent ID in integrations" />
+  ![Reference the payment intent ID in integrations](/images/p6.webp)
 </Frame>
 
 Stripe payment ids will look like pi_3MKECGFiethEjGwr1TWmQ0rN and allow you to tie a form submission to an actual payment in Stripe.
@@ -74,13 +74,15 @@ Stripe payment ids will look like pi_3MKECGFiethEjGwr1TWmQ0rN and allow you to t
 ## Send a receipt upon successful purchase
 
 Toggle `Send receipt` in the left-hand panel to automatically send the customer a receipt once they make a purchase.
+
 <Frame>
-  <img src ="/images/image-9.png"/>
+  ![](/images/image-9.png)
 </Frame>
+
 The receipt will only be sent if you enable the `Collect email` switch as described above. Note that receipts are not sent in Fillout preview mode.
 
 <Frame>
-<img src="/images/p8.webp" alt="Send a receipt upon successful purchase" />
+  ![Send a receipt upon successful purchase](/images/p8.webp)
 </Frame>
 
 ## Add a testimonial
@@ -88,18 +90,19 @@ The receipt will only be sent if you enable the `Collect email` switch as descri
 You can increase checkout rates by putting a testimonial from a customer. Go to **Appearance i**n the left-hand panel and turn on the `Show testimonial` switch.
 
 <Frame>
-  <img src ="/images/image-10.png"/>
+  ![](/images/image-10.png)
 </Frame>
+
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Create a dynamic payment page" href="/help/dynamic-payment" icon="cart-shopping" iconType="regular" color="#FFC738">
+  <Card title="Dynamic payment page" icon="cart-shopping" iconType="regular" color="#FFC738" href="/help/dynamic-payment">
     Make a checkout page where the product section and price automatically update based on the order.
   </Card>
-  <Card title="Calculations and variables" href="/help/calculations" icon="calculator-simple" iconType="regular" color="#FFC738">
+  <Card title="Calculations and variables" icon="calculator-simple" iconType="regular" color="#FFC738" href="/help/calculations">
     Calculate prices for order forms, compute the score of a quiz, and more.
   </Card>
-  <Card title="Conditionally hide fields" href="/help/conditional-hiding" icon="eye-slash" iconType="regular" color="#FFC738">
+  <Card title="Hide fields" icon="eye-slash" iconType="regular" color="#FFC738" href="/help/conditional-hiding">
     Hide or show fields based on prior inputs, URL parameters or external data.
   </Card>
 </CardGroup>
