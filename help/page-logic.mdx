@@ -1,18 +1,18 @@
 ---
-title: Page logic
-description: Build forms with multiple pages and branching logic. Conditionally show certain pages or show custom endings with Fillout.
-icon: diagram-project
-sidebarTitle: Page Logic
+title: "Page logic"
+description: "Build forms with multiple pages and branching logic. Conditionally show certain pages or show custom endings with Fillout."
+icon: "diagram-project"
+sidebarTitle: "Page Logic"
 ---
 
 ## Overview
 
-**Conditional** **[logic](/help)** lets your forms adapt to respondents' answers. By default, forms follow a linear path with a next-page button. With page logic and conditional steps, you can control how pages connect, creating a more interactive and personalized experience.
+**Conditional** [**logic**](/help/conditional-hiding) lets your forms adapt to respondents' answers. By default, forms follow a linear path with a next-page button. With page logic and conditional steps, you can control how pages connect, creating a more interactive and personalized experience.
 
 ## Video tutorial
 
 <Frame>
-<iframe class="notion-asset-object-fit" src="https://www.loom.com/embed/221e4df32658448caa83f0a2b5e73efb" title="iframe video" frameborder="0" allowfullscreen="" loading="lazy" scrolling="auto" width="100%" height="420px"></iframe>
+  <iframe class="notion-asset-object-fit" src="https://www.loom.com/embed/221e4df32658448caa83f0a2b5e73efb" title="iframe video" frameborder="0" allowfullscreen loading="lazy" scrolling="auto" width="100%" height="420px" />
 </Frame>
 
 ## Edit page branching
@@ -20,7 +20,7 @@ sidebarTitle: Page Logic
 To modify your form's flow, click `Logic`.
 
 <Frame>
-  <img src="/images/logic/image-4.png" alt="Screenshot of the Logic tab of a form" />
+  ![Screenshot of the Logic tab of a form](/images/logic/image-4.png)
 </Frame>
 
 Let's say you want to go to different pages depending on the result of a respondent's input. For example, we'll ask respondents what kind of company they work at.
@@ -34,7 +34,7 @@ What we want to do is:
 - If they don’t qualify (e.g. private company), show them the rejected ending page
 
 <Frame>
-  <img src="/images/logic/image-5.png" alt="Screenshot of the Logic tab of a form" />
+  ![Screenshot of the Logic tab of a form](/images/logic/image-5.png)
 </Frame>
 
 First, click and drag from the `+` symbol on the right side of the page you want to connect, then drop it onto the target page. For example, we'll click the plus symbol on **Info** and route it to **Rejected**.
@@ -42,27 +42,27 @@ First, click and drag from the `+` symbol on the right side of the page you want
 `Set condition` to define when it will redirect to **Rejected**. In this case, if it’s a **private company**.
 
 <Frame>
-  <img src="/images/logic/image-6.png" alt="Screenshot of the Logic tab of a form" />
+  ![Screenshot of the Logic tab of a form](/images/logic/image-6.png)
 </Frame>
 
 Finally, we also want to route respondents to the success page right away if they’re a student. `+ Add branch` to `Set condition`.
 
 <Frame>
-  <img src="/images/logic/image-7.png" alt="Screenshot of the Logic tab of a form" />
+  ![Screenshot of the Logic tab of a form](/images/logic/image-7.png)
 </Frame>
 
-We’re done! Now, respondents will get redirected to different pages depending on their answer.
+We’re done\! Now, respondents will get redirected to different pages depending on their answer.
 
 ## Related articles
 
 <CardGroup cols={3}>
-    <Card title="Page logic" href="/help/page-logic" icon="diagram-project" iconType="regular" color="#FFC738">
+  <Card title="Page logic" icon="diagram-project" iconType="regular" color="#FFC738" href="/help/page-logic">
     Hide or show certain pages or custom endings based on respondents' previous input.
   </Card>
-    <Card title="Ending page" href="/help/ending-page" icon="party-bell" iconType="regular" color="#FFC738">
+  <Card title="Ending page" icon="party-bell" iconType="regular" color="#FFC738" href="/help/ending-page">
     Show users a thank you page, redirect them to another site or form, or let them fill the form out again.
   </Card>
-  <Card title="Condition groups" href="/help/condition-logic-groups" icon="table-tree" iconType="regular" color="#FFC738">
+  <Card title="Condition groups" icon="table-tree" iconType="regular" color="#FFC738" href="/help/condition-logic-groups">
     Use nested logic to show, hide and validate fields based on multiple conditions at once.
   </Card>
 </CardGroup>
