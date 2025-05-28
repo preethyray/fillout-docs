@@ -2,7 +2,7 @@
 title: "Send email notifications with SendGrid"
 description: "Notify respondents after they submit your Fillout form with customizable emails that can include dynamic data. Add or update their existing contact information."
 sidebarTitle: "Send Email Notifications with SendGrid"
-icon: game-board-simple
+icon: "game-board-simple"
 ---
 
 ## What SendGrid is
@@ -16,13 +16,13 @@ icon: game-board-simple
 Open your form. Go to **Integrate** and click `SendGrid`.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.31.05PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.31.05PM.png)
 </Frame>
 
 Enter your **API Key** in Fillout. You can find this in the **Settings** section of your SendGrid dashboard. `Create API Key` on the upper right corner. Enter a **name**, then go with the default `Full Access` permission.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.35.31PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.35.31PM.png)
 </Frame>
 
 ### 2. Choose a template
@@ -30,7 +30,7 @@ Enter your **API Key** in Fillout. You can find this in the **Settings** section
 If you don’t have a template in SendGrid yet, select `Email API` on the left-hand panel followed by `Dynamic Templates`.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.41.23PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.41.23PM.png)
 </Frame>
 
 Click `Add Version` and start with a **blank template** or choose a **SendGrid Email Design**. Customize your email template as you see fit.
@@ -40,7 +40,7 @@ Click `Add Version` and start with a **blank template** or choose a **SendGrid E
 Match the fields in your Fillout form to the corresponding fields in your SendGrid contacts. For example, link the email address to its respective field. Then, fill out the **Sender identity** section.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.45.33PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.45.33PM.png)
 </Frame>
 
 You can personalize emails, by inserting dynamic data under **Template variables**. For example, we want the name to change depending on the customer’s name. Once everything is set, click `Finish setup` on the upper right corner.
@@ -58,7 +58,7 @@ Once you’ve finished creating your form, you’re ready to go\! Simply `Publis
 You can also send a plain custom-formatted email by choosing `Send email without template`.and entering the recipient and sender details. Reference form fields by clicking `+` or simply typing `@` to ensure each email is automatically tailored to every guest.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.57.16PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.57.16PM.png)
 </Frame>
 
 ## **Add or update contact information**
@@ -66,7 +66,7 @@ You can also send a plain custom-formatted email by choosing `Send email without
 Skip sending an email and simply `Add or update contact`. Choose a **List** in your SendGrid account. Then, link the **Email address** and `+ Add new` **Contact fields** as you see fit. Map the SendGrid fields on the left to their respective Fillout fields on the right.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at1.58.32PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at1.58.32PM.png)
 </Frame>
 
 ## **Specify a condition**
@@ -78,25 +78,25 @@ If necessary, you can run your integration only when a specific condition is met
 You can use **handlebars** to [pipe a respondent's information](https://docs.sendgrid.com/for-developers/sending-email/using-handlebars) in the notification email. For example, we'll personalize the email by adding the respondent's name. Simply type `{{ name }}` anywhere on your email.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-17at2.02.23PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/Screenshot2025-02-17at2.02.23PM.png)
 </Frame>
 
 When a respondent completes your form, they will be receiving a personalized email like the one below.
 
 <Frame>
-  <img src="/images/ScreenShot2023-10-09at4.51.44PM.png" alt="Screenshot of the Fillout form creation page" />
+  ![Screenshot of the Fillout form creation page](/images/ScreenShot2023-10-09at4.51.44PM.png)
 </Frame>
 
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="Conditional integration logic" href="/help/conditional-integration" icon="gear-complex" iconType="regular" color="#FFC738">
-Perform an integration only when a certain condition is met.
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738" href="/help/conditional-integration">
+    Perform an integration only when a certain condition is met.
   </Card>
-  <Card title="Calculations and variables" href="/help/calculations" icon="calculator-simple" iconType="regular" color="#FFC738">
-Calculate prices for order forms, compute the score of a quiz, and more.
+  <Card title="Calculations and variables" icon="calculator-simple" iconType="regular" color="#FFC738" href="/help/calculations">
+    Calculate prices for order forms, compute quiz scores, and more.
   </Card>
-  <Card title="Send messages with Twilio" href="/help/twilio" icon="message-sms" iconType="regular" color="#FFC738">
-Automate SMS updates and notifications to respondents or customers.
+  <Card title="Send messages with Twilio" icon="message-sms" iconType="regular" color="#FFC738" href="/help/twilio">
+    Automate SMS updates and notifications to respondents.
   </Card>
 </CardGroup>
