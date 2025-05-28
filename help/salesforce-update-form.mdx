@@ -2,10 +2,11 @@
 title: "Update existing Salesforce records with a form"
 description: "Make a form that lets users edits existing records from Salesforce, and pre-fills fields with data from the record."
 sidebarTitle: "Update Existing Salesforce Records with a Form"
-icon: cloud
+icon: "cloud"
 ---
 
 If you don’t already have a Fillout account, you can [create one here](https://build.fillout.com/signup). Then, create a form and connect your Salesforce account.
+
 ## How it works
 
 ### **1. Set your form to update mode**
@@ -13,13 +14,13 @@ If you don’t already have a Fillout account, you can [create one here](https:/
 First, navigate to the **Integrate** tab and select `Salesforce`.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-12at5.22.38PM.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/Screenshot2025-02-12at5.22.38PM.png)
 </Frame>
 
 Then, click `Update record`.
 
 <Frame>
-  <img src="/images/sfra.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/sfra.png)
 </Frame>
 
 ### **2. Create a custom update link per record**
@@ -27,25 +28,25 @@ Then, click `Update record`.
 You'll now get a formula that defines a unique link for every record in your object. Add this new formula to your Salesforce object.
 
 <Frame>
-  <img src="/images/sfra2.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/sfra2.png)
 </Frame>
 
 Go to your Salesforce dashboard and click the `settings icon` on the upper right side followed by `Open Advanced Setup`.
 
 <Frame>
-  <img src="/images/sfra3.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/sfra3.png)
 </Frame>
 
 Using **Quick Find** on the left-panel, search for `Object Manager`. Click your `object`. In our example, we used Contact.
 
 <Frame>
-  <img src="/images/ScreenShot2024-04-15at3.42.34PM.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/ScreenShot2024-04-15at3.42.34PM.png)
 </Frame>
 
 Go to `Fields & Relationships` and create a `New` field.
 
 <Frame>
-  <img src="/images/Screenshot2025-02-12at5.38.18PM.png" alt="Screenshot of the Integrate tab of a form" />
+  ![Screenshot of the Integrate tab of a form](/images/Screenshot2025-02-12at5.38.18PM.png)
 </Frame>
 
 Select **Formula** from the list. Then, copy and paste the formula from your Fillout form into Salesforce.
@@ -73,10 +74,10 @@ You can run your integration only when a specific condition is met. Check out th
 ## Related articles
 
 <CardGroup cols={3}>
-  <Card title="How to create a Salesforce form" href="/help/salesforce" icon="cloud" iconType="solid" color="#FFC738">
-Add or update your Salesforce records with a Fillout form.
+  <Card title="Create a Salesforce form" icon="cloud" iconType="solid" color="#FFC738" href="/help/salesforce">
+    Add or update your Salesforce records with a Fillout form.
   </Card>
-  <Card title="Conditional integration logic" href="/help/conditional-integration" icon="gear-complex" iconType="regular" color="#FFC738">
-Perform an integration only when a certain condition is met.
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738" href="/help/conditional-integration">
+    Perform an integration only when a certain condition is met.
   </Card>
 </CardGroup>
