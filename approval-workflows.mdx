@@ -1,0 +1,82 @@
+---
+title: "Approvals"
+description: "Automate project approvals, HR requests, job applications, and other workflow types. Easily track and manage submissions in one place, assign tasks, and request approvals via email or Slack."
+sidebarTitle: "Approvals"
+icon: "badge-check"
+---
+
+<Frame>
+  <iframe width="100%" height="420" src="https://www.youtube.com/embed/cy5L4XMGUdk" title="Introducing Fillout Approvals" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen />
+</Frame>
+
+## How to automate approvals
+
+On your Fillout dashboard, navigate to **Workflows** in the top menu, and select a template under **Approvals**.
+
+<Frame>
+  ![Fillout Workflows](/images/workflows/image-37.png)
+</Frame>
+
+Choose to **Approve or reject** form submissions or **Assign task**.
+
+`Create workflow` and choose the form you’d like to automate. Alternatively, you may open an existing form and do the same in the **Integrate** page.
+
+### Approve or reject submissions
+
+By default, the form owner is the **Approver**. You can `Edit` this to choose another member of the workspace or add more approvers.
+
+<Frame>
+  ![Fillout Workflows](/images/workflows/image-38.png)
+</Frame>
+
+You can also opt to **Request approval by** `Slack DM` or `Slack channel` other than through `Email`. If necessary, add **options** like escalate or follow up, request for **Approver input** like reason and comments, and edit the default **Notification email**.
+
+<Frame style={{ width: '384px' , height: '444px' }}>
+  ![Fillout Workflows](/images/workflows/image-39.png)
+</Frame>
+
+A different email will be sent depending on the option the approver will choose. You can opt to `Edit` the [contents of each email](/custom-emails) and [format its style](/custom-emails). When you have set your workflow, `Test` this before clicking `Publish`.
+
+<Frame>
+  ![Fillout Workflows](/images/workflows/image-40.png)
+</Frame>
+
+## Assign task for submissions
+
+Delegate a task to your team after receiving submissions. The default workflow template, sends a summary of form responses in a Slack channel to notify members.
+
+<Frame style={{ width: '288px' , height: '487px' }}>
+  ![Fillout Workflows](/images/workflows/image-41.png)
+</Frame>
+
+Besides notifying, you can enhance this workflow. For example, add a step for reviewing submissions. Customize it by clicking `Edit` in **Approval** and adding **Options**.
+
+<Frame style={{ width: '384px' , height: '414px' }}>
+  ![Fillout Workflows](/images/workflows/image-42.png)
+</Frame>
+
+You can opt to edit the `Custom message` in Slack and reference form fields. More info [here](/scheduling-workflows#8494c5d4aadf4c6ea9b768bde8a8b494).
+
+## Manage approvals in one dashboard
+
+When you receive an approval request, it will redirect to the **Results** page of your form where you can take the necessary `Action needed`.
+
+<Frame>
+  ![Fillout Workflows](/images/workflows/image-43.png)
+</Frame>
+
+You can view comments by clicking the `messaging icon` beside **Answers**.
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Workflows" icon="code-branch" iconType="regular" color="#FFC738" href="/workflows">
+    Simplify task flows with Fillout's native multi-step automations, triggered by your forms.
+  </Card>
+  <Card title="Custom email notifications" icon="envelope-open-text" iconType="regular" color="#FFC738" href="/custom-emails">
+    Automate email sending, pipe previous answers, and style your email.
+  </Card>
+  <Card title="Answer piping" icon="wand-magic-sparkles" iconType="regular" color="#FFC738" href="/answer-piping">
+    Insert respondents' previous answers into form fields or text fields for a personalized experience.
+  </Card>
+</CardGroup>

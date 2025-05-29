@@ -1,0 +1,54 @@
+---
+title: "Disable internal storage"
+description: "Prevent Fillout from storing responses submitted through your form."
+icon: "database"
+sidebarTitle: " Disable Internal Storage"
+---
+
+## Overview
+
+**Disabling internal storage** is available for users who prefer to control over where their data is stored. When this option is enabled, Fillout will not store any form submission data on its servers—either temporarily or long-term. This ensures that submission data is passed directly to your configured integrations or webhooks, without being saved by Fillout.
+
+This option may be useful for organizations with strict data residency, compliance, or privacy requirements that prohibit storing data on third-party servers, such as those in regulated industries or handling highly sensitive information.
+
+
+<Note>
+  **Note:** This feature is available on the **[Enterprise Tier 2 Plan](https://www.fillout.com/enterprise)**. If you're interested, please fill out **[this form](https://main.fillout.com/enterprise)** to speak directly to someone on our sales team.
+</Note>
+
+## Limitations
+
+Disabling internal storage will limit access to several features that rely on Fillout's servers to temporarily hold or process data:
+
+- **[Results page](/results):** Completed submissions in Fillout cannot be viewed.
+- **[Partial submissions](/partial-submissions):** Partially completed responses won’t be tracked or saved.
+- **[PDF generation](/pdfs):** PDFs cannot be created.
+- **[Fillout Scheduling](/scheduling):** Features related to scheduling (e.g., [time slot availability](/fillout-scheduling-availability) and calendar syncing) will be unavailable.
+- **[Approvals](/approval-workflows):** Approval workflows and status tracking will be disabled.
+
+## **How to use this feature**
+
+Open your form and click **Settings** on top. Next, click `Form behavior` on the left side to untoggle the `Only use external storage` switch.
+
+<Frame>
+  ![](/images/account/image-30.png)
+</Frame>
+
+<Check>
+  **Important:** File uploads are still stored on AWS S3 as many of Fillout's 3rd party integrations require an external link to uploaded files.
+</Check>
+
+## Related articles
+
+<CardGroup cols={3}>
+    <Card title="Results" icon="clipboard" iconType="regular" color="#FFC738" href="/results">
+    Review individual submissions and gain access to analytics, along with a summary.
+  </Card>
+
+  <Card title="Fillout Scheduling" icon="calendar" iconType="regular" color="#FFC738" href="/scheduling">
+    Book meetings on your Google or Outlook calendars right from a Fillout form for free.
+  </Card>
+  <Card title="Approvals" icon="badge-check" iconType="regular" color="#FFC738" href="/approval-workflows">
+    Automate project approvals, HR requests, job applications, and others.
+  </Card>
+</CardGroup>

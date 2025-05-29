@@ -1,0 +1,58 @@
+---
+title: "Answer piping"
+description: "Base logic in form fields on previous answers or use them to personalize your Fillout form with answer piping. Display read only fields."
+icon: "wand-magic-sparkles"
+sidebarTitle: "Answer Piping"
+---
+
+## Overview
+
+Make your Fillout forms more dynamic with **answer piping**, which inserts a respondent's previous answers into later questions or text fields for a more personalized and interactive experience.
+
+For example, you can create references to:
+
+- Previous form inputs
+- [URL parameters](/url-parameters)
+- Dates (e.g. today, a month from now, etc.)
+- [Dynamic data from integrations](/fetch-dynamic-data)
+- [Calculations and variables](/calculations)
+
+## **Referencing in field labels**
+
+To reference previous form inputs in plain text in the form, type `@` in a form field to show the reference menu.
+
+<Frame style={{ width: '576px' , height: '429px' }}>
+  ![Screenshot of the Form designer tab of a form](/images/logic/image-19.png)
+</Frame>
+
+Select the field or question, or simply search for it. Test your form by clicking `Preview` in the upper right corner.
+
+<Frame style={{ width: '480px' , height: '397px' }}>
+  ![Screenshot of the Form designer tab of a form](/images/logic/image-20.png)
+</Frame>
+
+<Note>
+  **Note:** You can only reference fields on the current page or on previous form pages.
+</Note>
+
+## **Referencing in field logic**
+
+To base **show/hide logic** for fields on previous form inputs, click its `settings` icon to open the right-hand panel. Under **Logic**, `Set conditional logic`. Click [here](/conditional-hiding) for more details.
+
+<Frame style={{ width: '288px' , height: '223px' }}>
+  ![Screenshot of the Form designer tab of a form](/images/logic/image-21.png)
+</Frame>
+
+## Related articles
+
+<CardGroup cols={3}>
+  <Card title="Conditional integration logic" icon="gear-complex" iconType="regular" color="#FFC738" href="/conditional-integration">
+    Perform an integration only when a certain condition is met.
+  </Card>
+  <Card title="Use dynamic data" icon="arrow-down-right" iconType="regular" color="#FFC738" href="/fetch-dynamic-data">
+    Display dynamic content to hide, validate, and pre-fill  fields.
+  </Card>
+  <Card title="Calculations and variables" icon="calculator-simple" iconType="regular" color="#FFC738" href="/calculations">
+    Calculate prices for order forms, compute quiz scores, and more.
+  </Card>
+</CardGroup>
