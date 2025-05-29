@@ -1,0 +1,85 @@
+---
+title: Create Fillout 3rd Party Apps
+description: "Create applications to connect Fillout to 3rd party applications. Add webhooks to listen for form responses, retrieve forms, etc."
+icon: grid-2-plus
+sidebarTitle: Create Fillout 3rd Party Apps
+---
+
+Third party applications built in Fillout can be used to allow you or your users to access their Fillout responses. To connect Fillout to your app, you’ll first start by creating an OAuth application in Fillout, which can later be submit for approval to be listed publicly for Fillout users.
+
+## Creating an OAuth app
+
+First, head to your [account settings](https://build.fillout.com/home/settings/developer/new), and click on `Developer` settings, and select `OAuth integrations`
+
+<Frame>
+  ![](/images/advanced/image-39.png)
+</Frame>
+
+
+Enter a name for your application (this is what users will see when they connect to your app), and click `Create app`.
+
+## Configure your application
+
+You’ll want to select an icon for your app (users will see this when they first connect), and also set up some basic properties:
+
+<Frame style={{ width: '480px' , height: '534px' }}>
+  ![](/images/advanced/image-40.png)
+</Frame>
+
+
+- **Redirect URI:** these are the endpoints you’d like to get sent to during the OAuth token exchange process to receive the token (more info below)
+- **Client secret**: you should generate a client secret to get started. **Make sure to save this token, it will only be shown once.**
+- **Client id:** this is the public ID of your application.
+
+## OAuth process
+
+### Authorization request
+
+`GET https://build.fillout.com/authorize/oauth`
+
+To initiate the OAuth process, you’ll start by sending users to the above endpoint, with the following query parameters:
+
+- `client_id`: the client ID of your app, which you can find while configuring it (see above)
+- `redirect_uri`: the URL you expect to be redirected to, once access is granted for the token
+- `state:` any string you’d like to use to retain state when redirecting back to your app
+
+After authorization, the user’s browser will be redirected back to the redirect URI passed. Successful requests will forward the following query parameters to that URI:
+
+- `code`: a unique oauth authorization code you can use to exchange for an access token
+- `state`: the state parameter you passed in initially
+
+### Token creation request
+
+`POST https://server.fillout.com/public/oauth/accessToken`
+
+Call this endpoint once you’ve successfully been redirected to after the authorization request. Pass, in the body of the request:
+
+- `code`: the code you received in the previous step
+- `client_id`: your client id for your app
+- `client_secret`: the client secret you generated for your app
+- `redirect_uri`: the redirect uri you originally received to generate this code.
+
+A successful response will look like:
+
+```json
+{
+	"access_token": "abcdefg",
+	"base_url": "https://api.fillout.com",
+}
+```
+
+The `access_token` will grant access to the [Fillout API](/fillout-rest-api)
+
+The `base_url` is the base URL for the api. Usually, this will be `https://api.fillout.com`, but may vary if you are in different geo-locations, or are self-hosting.
+
+### Invalidate access token
+
+`DELETE https://server.fillout.com/public/oauth/invalidate`
+
+To authenticate this request, pass the following headers:
+
+```json
+{
+	"Authentication": "Bearer <your-api-key>"
+}
+```

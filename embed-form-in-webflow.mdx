@@ -1,0 +1,70 @@
+---
+title: "Embed Fillout forms on Webflow"
+description: "Learn how to embed a Fillout form in Webflow. It only takes a few minutes to insert your form as a popup, slide-out, or standard element on the page."
+icon: "square-w"
+sidebarTitle: "Embed Fillout Forms on Webflow"
+---
+
+## Overview
+
+While [Webflow](https://webflow.com) has some built-in form features, they have limited multi-step functionality and only work with a limited number of third-party apps and platforms, making it hard to sync data to your CRM, database, or email marketing platform.
+
+## Video tutorial
+
+<Frame>
+  <iframe class="notion-asset-object-fit" src="https://www.loom.com/embed/615d4eab46b8400aaecfccd057ed3c96" title="iframe video" frameborder="0" allowfullscreen loading="lazy" scrolling="auto" width="100%" height="540" />
+</Frame>
+
+## How to embed your form in Webflow
+
+Start by clicking `Publish` in the upper right corner of the Fillout form editor. Next, open the **Share** tab from the top menu.
+
+<Frame style={{ width: '576px' , height: '152px' }}>
+  ![](/images/sharing-and-embedding/image-25.png)
+</Frame>
+
+Select your preferred embed style and click `Use this embed`. Adjust your embed style settings to fit your use case (more info [here]()) and click `Get the code`.
+
+<Frame style={{ width: '624px' , height: '351px' }}>
+  ![](/images/sharing-and-embedding/image-26.png)
+</Frame>
+
+Open your Webflow visual editor, click the `+` symbol on the upper left corner (or press `A`) to open the **Add Elements** sidebar.
+
+Select the **Elements** tab, scroll to the **Advanced** section at the bottom of the list, and drag and drop the `Embed` to a spot on the page.
+
+<Frame style={{ width: '480px' , height: '374px' }}>
+  ![](/images/sharing-and-embedding/image-27.png)
+</Frame>
+
+Paste your **embed code** from Fillout into the code editor and click `Save & Close`.
+
+The Webflow visual editor doesn’t display scripts, so you need to open the **Publish** menu in the upper right corner of the screen and click `Publish to selected domains`. After publishing the changes, click the `external link icon` next to your site URL (an arrow pointing to the upper right corner) to confirm that the embed works as intended.
+
+## Troubleshooting common issues
+
+<Frame>
+  ![](/images/sharing-and-embedding/image-28.png)
+</Frame>
+
+Sometimes, design settings applied in Fillout cause the embed to show up as too narrow on the page. To fix this manually, select the `Embed` in the visual editor, then open the **Size** menu from the right **Style** sidebar.
+
+Increase the `Min W` value, publish the changes, and keep adjusting until you find a value you like (500px is a good starting point).
+
+<Frame>
+  ![](/images/sharing-and-embedding/image-29.png)
+</Frame>
+
+Floating buttons (available in the **Popup** and **Slider** embed settings) may float behind certain elements and styles, like image sliders.
+
+One way to fix this is placing the `Embed` element inside of a `Div` block (under **Basic** in the **Add Elements** sidebar) – almost anywhere on the page should work – and selecting `Relative` from the **Position** dropdown in the right **Style** sidebar.
+
+Then, click on every `Slide` element on the page and select `Static` from the **Position** dropdown within the **Style** sidebar.
+
+## Related article
+
+<CardGroup cols={3}>
+  <Card title="Sharing & Embedding" icon="link" iconType="regular" color="#FFC738" href="/sharing">
+    Share your Fillout forms via link, website embed, or QR code
+  </Card>
+</CardGroup>

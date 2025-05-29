@@ -1,0 +1,39 @@
+---
+title: Subprocessors
+description: Fillout’s subprocessors.
+icon: panel-ews
+---
+
+## GDPR
+
+For more details specific to GDPR, see:
+
+
+<CardGroup cols={2}>
+  <Card title="Fillout and GDPR-Compliant Forms" icon="camera-security" iconType="regular" color="#FFC738" href="/gdpr">
+  Learn about keeping form data private and data processing.
+  </Card>
+</CardGroup>
+
+## Subprocessors
+
+| **Subprocessor** | **Use** | **Country** | **GDPR Compliance** | May process submission data (form results) |
+| --- | --- | --- | --- | --- |
+| Render (infrastructure on AWS) | Hosting and storage | US and EU (EU only for EU submission hosting customers)\* | [Learn more](https://render.com/trust) | Yes |
+| AWS | File storage (S3) | US or EU (for EU submission hosting customers)\* | [Learn more](https://aws.amazon.com/compliance/gdpr-center/) | Yes |
+| Postmark | Email | US | [Learn more](https://postmarkapp.com/eu-privacy#summary) | Yes |
+| Stripe | Payments | US | [Learn more](https://stripe.com/legal/dpa) | Yes |
+| Cloudflare | CDN | Worldwide | [Learn more](https://www.cloudflare.com/trust-hub/gdpr/) | Yes |
+| WorkOS | SSO | US | [Learn more](https://workos.com/security) | Yes (Enterprise SSO login users only) |
+| Amplitude | Analytics | US | [Learn more](https://amplitude.com/trust) | **No** |
+| Segment | Event pipeline | US | [Learn more](https://segment.com/docs/privacy/complying-with-the-gdpr/) | **No** |
+| Google (Gmail) \*\* | Support | US | [Learn more](https://cloud.google.com/privacy/gdpr) | **No** |
+| Intercom \*\* | Support | US | [Learn more](https://www.intercom.com/help/en/articles/1385437-how-intercom-complies-with-gdpr) | **No** |
+| Sentry | Error logging | US | [Learn more](https://sentry.io/trust/privacy/) | **No** |
+| Datadog | Monitoring | US | [Learn more](https://www.datadoghq.com/gdpr/) | **No** |
+| OpenAI | AI + transcription | US (does not apply for EU submission hosting customers) | [Learn more](https://openai.com/security) | Yes (opt-in, e.g. if transcription is enabled on “voice recording” field) |
+| Microsoft Azure | AI + transcription | EU (only for EU submission hosting customers) | [Learn more](https://www.microsoft.com/en-us/trust-center/privacy/gdpr-overview) | Yes (opt-in, e.g. if transcription is enabled on “voice recording” field) |
+
+\* And/or other regions for enterprise customers, if explicitly specified in agreement (e.g. Canada, Australia)
+
+\*\* Used to provide support to respondents if they contact Fillout for support or to exercise their rights as data subjects.
