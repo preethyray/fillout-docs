@@ -17,34 +17,37 @@ Passing data to your embedded Fillout form can be used to:
 ## Pass dynamic URL parameters (hidden fields) to your embed
 
 ### 1. Register URL parameters, if you haven’t yet.
-  Add your parameter in the **Settings** page of your form. More information [here](/url-parameters).
+
+Add your parameter in the **Settings** page of your form. More information [here](/url-parameters).
 
 <Frame>
   ![](/images/sharing-and-embedding/image-3.png)
 </Frame>
 
 ### 2. Paste the code
-  Select one of the **Embed options** followed by `Get the code`. Then paste into your site.
+
+Select one of the **Embed options** followed by `Get the code`. Then paste into your site.
 
 <Frame>
   ![](/images/sharing-and-embedding/image-4.png)
 </Frame>
-  You can optionally customize how the embed and button will look.
 
-<Frame style={{ width: '288px' , height: '472px' }}>
+You can optionally customize how the embed and button will look.
+
+<Frame>
   ![](/images/sharing-and-embedding/image-5.png)
 </Frame>
 
 ### 3. In the Embed code, add data attributes for each URL parameter
 
-    For example, if you’re embedding this form on your site which is a Facebook-related campaign, and you have a URL parameter of `ref`, you can use `data-ref="Facebook"`. Your embedding code will look something like this:
+For example, if you’re embedding this form on your site which is a Facebook-related campaign, and you have a URL parameter of `ref`, you can use `data-ref="Facebook"`. Your embedding code will look something like this:
 
-    ```html
-    <div data-fillout-id="cwb3NdqFmJus" data-fillout-embed-type="standard" style="width:100%;height:500px;" data-fillout-inherit-parameters data-fillout-dynamic-resize data-ref="Facebook"></div><script src="https://server.fillout.com/embed/v1/"></script>
-    ```
+```html
+<div data-fillout-id="cwb3NdqFmJus" data-fillout-embed-type="standard" style="width:100%;height:500px;" data-fillout-inherit-parameters data-fillout-dynamic-resize data-ref="Facebook"></div><script src="https://server.fillout.com/embed/v1/"></script>
+```
 
 <Note>
-**Note:** Embeds will automatically inherit URL parameters from the parent page that they’re on, so if your main site already has these, you simply need to register the parameter in your form to use it.
+  **Note:** Embeds will automatically inherit URL parameters from the parent page that they’re on, so if your main site already has these, you simply need to register the parameter in your form to use it.
 </Note>
 
 ### 4. Share your form link
@@ -55,12 +58,12 @@ Once everything is set, click `Publish` in the upper right corner and share your
 
 <CardGroup cols={3}>
   <Card title="URL Parameters" icon="brackets-curly" iconType="regular" color="#FFC738" href="/url-parameters">
-    Pass information to a Fillout form to support pre-filling and personalizing of the form.
+    Pass information to a form to support pre-filling and personalizing of the form.
   </Card>
   <Card title="Update existing Airtable records" icon="arrow-rotate-right" iconType="regular" color="#FFC738" href="/airtable-update-form">
-    Edit existing records in Airtable and pre-fill fields with data from the record.
+    Edit existing records in Airtable and pre-fill fields.
   </Card>
   <Card title="Update existing Notion pages" icon="arrow-rotate-right" iconType="regular" color="#FFC738" href="/notion-update-form">
-    Edit existing Notion pages and pre-fill fields with data from the page.
+    Edit existing Notion pages and pre-fill fields.
   </Card>
 </CardGroup>
